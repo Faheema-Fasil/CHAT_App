@@ -34,7 +34,7 @@ function ChatArea({allmsg,user}) {
                                 />
                                 <Box sx={{display:"flex",alignItems:"center",justifyContent:"space-between",mt:1}}>
                                     <Typography variant='body2'>
-                                       <span>{new Date(item.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: true })}</span>
+                                       <span>{new Date(item.createdAt).toLocaleString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true })}</span>
                                     
                                     </Typography>
                                 </Box>
