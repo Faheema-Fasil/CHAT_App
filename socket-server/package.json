@@ -17,6 +17,7 @@
     "jsonwebtoken": "^9.0.2",
     "jwt-decode": "^4.0.0",
     "mongoose": "^8.15.0",
+    "nodemon": "^3.1.10",
     "react-hook-form": "^7.56.4",
     "socket.io": "^4.8.1"
   }

@@ -1,12 +1,7 @@
-const {Router}=require('express')
-const { getMessages } = require('../controller/messageController')
-const router=Router()
+const { Router } = require("express");
+const { getMessages } = require("../controller/messageController");
+const router = Router();
 
-router.get("/:id",getMessages)
+router.get("/:userId/:partnerId", getMessages);
 
-
-
-
-
-
-module.exports=router
+module.exports = router;
