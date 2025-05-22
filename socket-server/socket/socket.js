@@ -20,7 +20,9 @@ const removeUser=(socketId)=>{
 const socketInit=(server)=>{
     const io=socket(server,{
         cors:{
-            origin:"http://localhost:5173"
+            origin:"*",
+            method:["GET","POST"],
+            credentials: true
         }
     })
     // console.log("test",server);
@@ -47,5 +49,7 @@ const socketInit=(server)=>{
   
   
 });
+return io;
+
 }
 module.exports=socketInit
