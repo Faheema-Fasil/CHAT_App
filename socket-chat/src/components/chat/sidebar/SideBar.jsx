@@ -29,7 +29,7 @@ function SideBar({ setAllmsg, user, onlineUsers, roomData, setRoomData }) {
       receiver: item,
     });
     axios
-      .get(`http://localhost:5000/api/message/${user._id}/${item._id}`)
+      .get(`https://chat-app-1-un0b.onrender.com/api/message/${user._id}/${item._id}`)
       .then((res) => {
         console.log(res);
         setAllmsg(res.data.data);

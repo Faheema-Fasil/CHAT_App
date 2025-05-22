@@ -18,7 +18,7 @@ function Login() {
   useEffect(()=>{},[])
   const onSubmit=(data)=>{
     console.log(data);
-    axios.post("http://localhost:5000/api/user/login",data)
+    axios.post("https://chat-app-1-un0b.onrender.com/api/user/login",data)
     .then((res)=>{
       if (res.status===200) {
         // console.log(res)

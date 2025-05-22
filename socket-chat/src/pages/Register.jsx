@@ -15,7 +15,7 @@ function Register() {
     })
     const onSubmit=(data)=>{
       console.log(data);
-      axios.post("http://localhost:5000/api/user/register",data)
+      axios.post("https://chat-app-1-un0b.onrender.com/api/user/register",data)
       .then((res)=>{
         if (res.status==200) {
           navigate("/")
