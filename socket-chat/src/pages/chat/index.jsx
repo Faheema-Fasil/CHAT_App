@@ -12,7 +12,7 @@ const Chat = () => {
     room: null,
   });
   const [allmsg, setAllmsg] = useState([]);
-  const PATH = "http://localhost:5000";
+  const PATH = "https://chat-app-1-un0b.onrender.com";
   const socketRef = useRef();
   const navigate = useNavigate();
   const { state } = useLocation("/");
